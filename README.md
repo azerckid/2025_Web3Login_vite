@@ -10,26 +10,26 @@ Solana(Phantom)와 Ethereum(MetaMask) 지갑을 모두 지원하는 Web3 로그�
 ## 데모 화면
 ![demo](./screenshot.png)
 
+## 환경 변수 설정
+
+1. 프로젝트 루트에 있는 `.env.example` 파일을 복사하여 `.env`로 이름을 바꿉니다.
+2. 각 항목에 실제 값을 입력하세요.
+
+```bash
+cp .env.example .env
+```
+
+- `VITE_SOLANA_RPC_URL` : Solana RPC 엔드포인트(예: Alchemy)
+- `VITE_ETHEREUM_RPC_URL` : Ethereum RPC 엔드포인트(예: Alchemy)
+
 ## 설치 및 실행
 
 ```bash
 # 의존성 설치
 npm install
 
-# .env 파일 생성 (RPC 주소 입력)
-cp .env.example .env
-# .env 파일에 아래와 같이 입력
-# VITE_SOLANA_RPC_URL=... (예: Alchemy Solana RPC)
-# VITE_ETHEREUM_RPC_URL=... (예: Alchemy Ethereum RPC)
-
 # 개발 서버 실행
 npm run dev
-```
-
-## 환경변수(.env 예시)
-```
-VITE_SOLANA_RPC_URL=https://solana-mainnet.g.alchemy.com/v2/your-key
-VITE_ETHEREUM_RPC_URL=https://eth-mainnet.g.alchemy.com/v2/your-key
 ```
 
 ## 주요 기능
